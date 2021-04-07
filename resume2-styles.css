@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     max-width: 550px;
     margin: 0 auto;
 }
@@ -18,7 +19,6 @@ body {
 .summary {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .photo {
@@ -155,9 +155,11 @@ body {
 
     .summary-info {
         border-radius: 15px;
+        min-width: 225px;
     }
 
     .details {
         border-radius: 15px;
+        max-width: 670px;
     }
 }
