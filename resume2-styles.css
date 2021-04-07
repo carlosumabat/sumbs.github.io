@@ -1,0 +1,163 @@
+body {
+    background-color: #7dc2ad;
+}
+
+.resume {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #323232;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo {
+    transform: translateY(75px);
+}
+
+.profile-picture {
+    display: block;
+    max-width: 150px;
+    border-radius: 50%;
+    border: solid #7dc2ad 4px;
+    margin: 0 auto;
+}
+
+.summary-info {
+    padding: 65px 25px 10px 25px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    background-color: #f7f7f7;
+    border-bottom: solid #ccc 1px;
+}
+
+.name {
+    margin: 16px 0 0 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.links {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.link {
+    font-size: 24px;
+    color: #e27d60;
+    text-decoration: none;
+}
+
+.intro {
+    padding-top: 20px;
+}
+
+.intro-text {
+    margin: 0;
+}
+
+.details {
+    padding: 10px 25px 25px 25px;
+    border-radius: 0 0 15px 15px;
+    background-color: #f7f7f7;
+}
+
+.details-section {
+    border-bottom: solid #ccc 1px;
+}
+
+.details-section-subheading {
+    margin: 12px 0 10px 0;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #18a0a4;
+    text-transform: uppercase;
+}
+
+.details-section-list {
+    margin: 0 0 10px 0;
+}
+
+.degree-program {
+    font-weight: bold;
+}
+
+.position {
+    font-weight: bold;
+}
+
+.date-range {
+    font-weight: 100;
+    font-size: 14.5px;
+}
+
+.university {
+    font-style: italic;
+}
+
+.company-detail {
+    font-style: italic;
+}
+
+.cta {
+    display: flex;
+    padding-top: 25px;
+}
+
+.cta-info {
+    flex-grow: 2;
+    flex-shrink: 1;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.cta-link {
+    display: flex;
+    flex: 1 0 150px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.cta-link-mailto {
+    max-height: 32.8px;
+    padding: 10px 20px;
+    background-color: #e27d60;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .1);
+}
+
+@media screen and (min-width: 600px) {
+    .page-container {
+        flex-direction: row;
+        column-gap: 20px;
+        max-width: none;
+    }
+
+    .summary-info {
+        border-radius: 15px;
+    }
+
+    .details {
+        border-radius: 15px;
+    }
+}
