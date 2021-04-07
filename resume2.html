@@ -5,51 +5,149 @@
     <title>Fancy Resume</title>
     <script src="https://kit.fontawesome.com/20ee51dd4c.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            background-color: #7dc2ad;
+        }
+
         .resume {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #323232;
         }
 
         .page-container {
             display: flex;
             flex-direction: column;
-            max-width: 500px;
+            max-width: 550px;
             margin: 0 auto;
-            border-radius: 15px;
-            padding: 25px;
-            background-color: wheat;
         }
 
         .summary {
             justify-content: center;
         }
 
-        .photo {}
+        .photo {
+            transform: translateY(75px);
+        }
 
         .profile-picture {
             display: block;
             max-width: 150px;
             border-radius: 50%;
+            border: solid #7dc2ad 4px;
             margin: 0 auto;
         }
 
         .summary-info {
+            padding: 65px 25px 10px 25px;
             text-align: center;
+            border-radius: 15px 15px 0 0;
+            background-color: #f7f7f7;
+            border-bottom: solid #ccc 1px;
         }
 
-        .details {}
+        .name {
+            margin: 16px 0 0 0;
+        }
 
-        .details-section {}
+        .title {
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        .links {
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .link {
+            font-size: 24px;
+            color: #e27d60;
+            text-decoration: none;
+        }
+
+        .intro {
+            padding-top: 20px;
+        }
+
+        .intro-text {
+            margin: 0;
+        }
+
+        .details {
+            padding: 10px 25px 25px 25px;
+            border-radius: 0 0 15px 15px;
+            background-color: #f7f7f7;
+        }
+
+        .details-section {
+            border-bottom: solid #ccc 1px;
+        }
+
+        .details-section-subheading {
+            margin: 12px 0 10px 0;
+            font-size: 12pt;
+            font-weight: 500;
+            color: #18a0a4;
+            text-transform: uppercase;
+        }
+
+        .details-section-list {
+            margin: 0 0 10px 0;
+        }
+
+        .degree-program {
+            font-weight: bold;
+        }
+
+        .position {
+            font-weight: bold;
+        }
+
+        .date-range {
+            font-weight: 100;
+            font-size: 14.5px;
+        }
+
+        .university {
+            font-style: italic;
+        }
+
+        .company-detail {
+            font-style: italic;
+        }
 
         .cta {
             display: flex;
+            padding: 25px 0 10px 0;
         }
 
         .cta-info {
             flex-grow: 2;
+            flex-shrink: 1;
+            padding-right: 40px;
+            font-size: 20px;
         }
 
         .cta-link {
-            flex-grow: 1;
+            display: flex;
+            flex: 1 0 150px;
+            text-transform: uppercase;
+            justify-content: center;
+        }
+
+        .cta-link-mailto {
+            max-height: 32.8px;
+            padding: 10px 20px;
+            background-color: #e27d60;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #f7f7f7;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
         }
     </style>
 </head>
@@ -79,20 +177,20 @@
                     </div>
                     <div class="intro">
                         <p class="intro-text">Hi! I'm John.</p>
-                        <p class="intro-text">I like to watch anime and shoot people over the internet.</p>
+                        <p class="intro-text">I like to watch anime and play video games.</p>
                     </div>
                 </div>
             </div>
             <div class="details">
                 <div class="details-section education">
-                    <h2>
+                    <h2 class="details-section-subheading">
                         Education
                     </h2>
                     <div class="education-item">
                         <span class="degree-program">BS Computer Science</span>, <span class="date-range">2019 –
                             2023</span> <br>
                         <span class="university">University of the Philippines Diliman</span>
-                        <ul>
+                        <ul class="details-section-list">
                             <li>University Scholar (GWA: 1.2847)</li>
                             <li>DOST Scholarship Grantee</li>
                         </ul>
@@ -101,20 +199,20 @@
                         <span class="degree-program">BS Mathematics</span>, <span class="date-range">2018 – 2019</span>
                         <br>
                         <span class="university">University of the Philippines Diliman</span>
-                        <ul>
+                        <ul class="details-section-list">
                             <li>University Scholar (GWA: 1.2368)</li>
                         </ul>
                     </div>
                 </div>
                 <div class="details-section job-experiences">
-                    <h2>
+                    <h2 class="details-section-subheading">
                         Job Experiences
                     </h2>
                     <div class="job-experience-item">
                         <span class="position">Founding Tutor (Freelance)</span>, <span class="date-range">January 2020
                             – present</span> <br>
                         <span class="company-detail">Livingston Research / Remote Work</span>
-                        <ul>
+                        <ul class="details-section-list">
                             <li>Provides remote tutoring services to 10+ international students a month</li>
                             <li>Discusses with co-founding tutors regarding changes on policies and processes of the
                                 platform
@@ -126,7 +224,7 @@
                         <span class="position">Academic Writer (Freelance)</span>, <span class="date-range">March 2018 –
                             June 2018</span> <br>
                         <span class="company-detail">Livingston Research / Remote Work</span>
-                        <ul>
+                        <ul class="details-section-list">
                             <li>Wrote 10+ academic papers a month in English, Mathematics, and Culture using scholarly
                                 sources
                             </li>
@@ -138,7 +236,7 @@
                         <span class="cta-info-text">Let's build something great together!</span>
                     </div>
                     <div class="cta-link">
-                        <span class="cta-link-mailto">Send me an email</span>
+                        <button class="cta-link-mailto">Send me an email</button>
                     </div>
                 </div>
             </div>
